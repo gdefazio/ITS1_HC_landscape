@@ -69,6 +69,7 @@ def kegg2genus(genus_comp_path):
 
     final = reduce(lambda x, y: x.merge(y, on='npath', how='outer'), alldf)
     final.replace(np.NaN, 0, inplace=True)
+
     final['percent'] = final.sum(axis=1) / 60 * 100
     final.to_csv('./4genusKEGGpathway.csv')
     return final
