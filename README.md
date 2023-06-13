@@ -16,7 +16,7 @@ healthy control samples in publicly available NCBI BioProjects. For this investi
 (Internal Transcribed Spacer) ITS1 DNA barcode was selected because of its superior reliability
 in comparison with ITS2 [2]. Then, a compositional profile was obtained. Also, a focus about
 KEGG [3] pathways potentially associated with investigated microbiota was performed.
-Methods
+## Methods
 Five NCBI BioProjects were selected by combining an in-house developed Python script and a
 manual research on the NBCI BioProject website. The inclusion criteria were the presence of
 healthy control in the study and the use of ITS1 sequence as investigated barcode. Then,
@@ -43,7 +43,8 @@ selected as genus associated. Genera associated pathways significantly prevalent
 samples were selected (Chi-square, FDR < 0.01).
 Finally, a gender specific analysis for α-diversity was performed within a subset of samples for
 which sex metadata were publicly available.
-Results
+
+## Results
 Five studies were selected according to the inclusion criteria described above. The NCBI
 BioProject accession numbers are PRJNA778607, PRJNA607176, PRJNA317653, PRJEB25916,
 PRJEB53019 with 42, 47, 10, 61, 11 healthy control subjects, respectively. The total amount of
@@ -64,20 +65,20 @@ comparing male vs female distributions for Inverse Simpson resulted statisticall
 value 0.011).
 In conclusion, this study highlights the potential of publicly available metabarcoding data reuse
 for the exploration of human gut eukaryotic microorganisms composition and their associatedbiochemical pathways.
-Info
+
+### Reference
 [1] P. J. Turnbaugh, R. E. Ley, M. Hamady, C. M. Fraser-Liggett, R. Knight, e J. I. Gordon, «The
 Human Microbiome Project», Nature, vol. 449, fasc. 7164, Art. fasc. 7164, ott. 2007, doi:
-10.1038/nature06244.
+10.1038/nature06244.<br>
 [2] X.-C. Wang et al., «ITS1: a DNA barcode better than ITS2 in eukaryotes?», Mol. Ecol.
-Resour., vol. 15, fasc. 3, Art. fasc. 3, 2015, doi: 10.1111/1755-0998.12325.
+Resour., vol. 15, fasc. 3, Art. fasc. 3, 2015, doi: 10.1111/1755-0998.12325.<br>
 [3] M. Kanehisa e S. Goto, «KEGG: Kyoto Encyclopedia of Genes and Genomes», Nucleic Acids
-Res., vol. 28, fasc. 1, pp. 27–30, gen. 2000.
+Res., vol. 28, fasc. 1, pp. 27–30, gen. 2000.<br>
 [4] M. A. Tangaro et al., «ITSoneWB: profiling global taxonomic diversity of eukaryotic
-communities on Galaxy», Bioinformatics, fasc. btab431, giu. 2021, doi:
-10.1093/bioinformatics/btab431.
+communities on Galaxy», Bioinformatics, fasc. btab431, giu. 2021, doi:10.1093/bioinformatics/btab431.<br>
 [5] M. Santamaria et al., «ITSoneDB: a comprehensive collection of eukaryotic ribosomal RNA
 Internal Transcribed Spacer 1 (ITS1) sequences», Nucleic Acids Res., vol. 46, fasc. D1, Art. fasc.
-D1, gen. 2018, doi: 10.1093/nar/gkx855.
+D1, gen. 2018, doi: 10.1093/nar/gkx855.<br>
 [6] B. Fosso et al., «BioMaS: a modular pipeline for Bioinformatic analysis of Metagenomic
 AmpliconS», BMC Bioinformatics, vol. 16, fasc. 1, Art. fasc. 1, dic. 2015, doi: 10.1186/s12859-
-015-0595-z.
+015-0595-z.<br>
