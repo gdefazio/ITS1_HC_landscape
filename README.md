@@ -85,5 +85,47 @@ AmpliconS», BMC Bioinformatics, vol. 16, fasc. 1, Art. fasc. 1, dic. 2015, doi:
 015-0595-z.
 ### Supplementary information
 
-#### ...about KEGG pathways individuation
+#### About KEGG pathways individuation
+In this study, KEGG pathways representation is obtained relying on genera composition. 
+For each genus found in our samples, the script *kegg_pathways_analysis.py* 
+interrogates KEGG database API *(https://rest.kegg.jp/list/pathway/)*, 
+downloading pathways of species belonging to genera found in samples. Then, for a reliable 
+genus representation of KEGG pathways, only pathways in common among 
+species of the same genus were reported.<br>
+The result is a DataFrame reporting KEGG pathways as rows and genera 
+as columns filled by 0/1 as boolean. 
+For more inspect the *kegg_pathways_analysis.py* code.
 
+#### About prevalent taxa and KEGG pathways individuation
+Prevalent genera among samples were found by using the following R script:
+```
+genera <- read.csv('./samples/BioMas_raref_genus_collapsed.csv', row.names =1)
+g.list <- genera$genus[2:614]
+g.list
+rownames(genera) <- genera$genus
+g.TF <- data.frame(row.names = g.list)
+for (g in g.list){
+  g.TF[g, c('FALSE', 'TRUE')] <- table(genera[g,2:61] > 0)
+  tst <- prop.test(x=g.TF[g,'TRUE'],n= 60, alternative = 'greater')
+  g.TF[g, 'p.value'] <- tst$p.value
+  g.TF[g, 'prop'] <- tst$estimate[['p']]
+}
+g.TF$padj <- p.adjust(p = g.TF$p.value,
+                      method = 'BH',
+                      n = 613)
+sign.gen <- g.TF[g.TF$padj < 0.05,1:5]
+```
+The same procedure was used for phyla and KEGG pathways
+
+### Supplementary figures
+
+![](/home/giuseppedefazio/Documenti/lavoro_unifi/ITS1_project/rarefaction_curve.png)
+*__Figure A__: Rarefaction curve. The selected sampling depth (10,000 reads) did not
+guarantee to reach the plateau. It was selected in order to retain the largest 
+possible number of samples*
+
+![](/home/giuseppedefazio/Documenti/lavoro_unifi/ITS1_project/jaccard_pcoa.png)
+*__Figure B__: Beta diversity - Jaccard PCoA representing all samples (171 healty controls)*
+
+![](/home/giuseppedefazio/Documenti/lavoro_unifi/ITS1_project/bray_curtis_pcoa.png)
+*__Figure C__: Beta diversity - Bray-Curtis PCoA representing all samples (171 healty controls)*
