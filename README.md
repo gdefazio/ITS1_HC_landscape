@@ -119,13 +119,25 @@ The same procedure was used for phyla and KEGG pathways
 
 ### Supplementary figures
 
+![](./suppfigs/jaccard_pcoa.png)
+*__Figure A__: Beta diversity - Jaccard PCoA representing all samples (171 healty controls)*
+
+![](./suppfigs//bray_curtis_pcoa.png)
+*__Figure B__: Beta diversity - Bray-Curtis PCoA representing all samples (171 healty controls)*
+
 ![](./suppfigs/rarefaction_curve.png)
-*__Figure A__: Rarefaction curve. The selected sampling depth (10,000 reads) did not
+*__Figure C__: Rarefaction curve. The selected sampling depth (10,000 reads) did not
 guarantee to reach the plateau. It was selected in order to retain the largest 
 possible number of samples*
 
-![](./suppfigs/jaccard_pcoa.png)
-*__Figure B__: Beta diversity - Jaccard PCoA representing all samples (171 healty controls)*
+![](./suppfigs/BioMaS_KEGG_biosynthesis.png)
+*__Figure D__: Box-plot representing relative abundance sum of genera sustaining 
+KEGG prevalent biosynthesis pathways.*
 
-![](./suppfigs//bray_curtis_pcoa.png)
-*__Figure C__: Beta diversity - Bray-Curtis PCoA representing all samples (171 healty controls)*
+![](./suppfigs/BioMaS_KEGG_degradation.png)
+*__Figure E__: Box-plot representing relative abundance sum of genera sustaining 
+KEGG prevalent degradation pathways.*
+
+![](./suppfigs/BioMaS_KEGG_metabolism.png)
+*__Figure E__: Box-plot representing relative abundance sum of genera sustaining 
+KEGG prevalent metabolism pathways.*
