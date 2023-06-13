@@ -82,9 +82,7 @@ Internal Transcribed Spacer 1 (ITS1) sequences», Nucleic Acids Res., vol. 46, f
 D1, gen. 2018, doi: 10.1093/nar/gkx855.<br>
 [6] B. Fosso et al., «BioMaS: a modular pipeline for Bioinformatic analysis of Metagenomic
 AmpliconS», BMC Bioinformatics, vol. 16, fasc. 1, Art. fasc. 1, dic. 2015, doi: 10.1186/s12859-
-015-0595-z.<br>
-<br>
-<br>
+015-0595-z.
 ### Supplementary information
 
 #### ...about KEGG pathways individuation
