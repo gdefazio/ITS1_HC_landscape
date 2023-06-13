@@ -119,13 +119,13 @@ The same procedure was used for phyla and KEGG pathways
 
 ### Supplementary figures
 
-![](/home/giuseppedefazio/Documenti/lavoro_unifi/ITS1_project/rarefaction_curve.png)
+![](./suppfigs/rarefaction_curve.png)
 *__Figure A__: Rarefaction curve. The selected sampling depth (10,000 reads) did not
 guarantee to reach the plateau. It was selected in order to retain the largest 
 possible number of samples*
 
-![](/home/giuseppedefazio/Documenti/lavoro_unifi/ITS1_project/jaccard_pcoa.png)
+![](./suppfigs/jaccard_pcoa.png)
 *__Figure B__: Beta diversity - Jaccard PCoA representing all samples (171 healty controls)*
 
-![](/home/giuseppedefazio/Documenti/lavoro_unifi/ITS1_project/bray_curtis_pcoa.png)
+![](./suppfigs//bray_curtis_pcoa.png)
 *__Figure C__: Beta diversity - Bray-Curtis PCoA representing all samples (171 healty controls)*
