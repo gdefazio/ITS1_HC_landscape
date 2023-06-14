@@ -130,10 +130,10 @@ We found contaminant phyla such as *Chordata, Streptophyta, Arthropoda,* etc.
 ### Supplementary figures
 
 ![](./suppfigs/jaccard_pcoa.png)
-*__Figure A__: Beta diversity - Jaccard PCoA representing all samples (171 healty controls)*
+*__Figure A__: Beta diversity - Jaccard PCoA representing all samples (171 healthy controls)*
 
 ![](./suppfigs//bray_curtis_pcoa.png)
-*__Figure B__: Beta diversity - Bray-Curtis PCoA representing all samples (171 healty controls)*
+*__Figure B__: Beta diversity - Bray-Curtis PCoA representing all samples (171 healthy controls)*
 
 ![](./suppfigs/rarefaction_curve.png)
 *__Figure C__: Rarefaction curve. The selected sampling depth (10,000 reads) did not
