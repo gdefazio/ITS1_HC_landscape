@@ -83,6 +83,12 @@ D1, gen. 2018, doi: 10.1093/nar/gkx855.<br>
 [6] B. Fosso et al., «BioMaS: a modular pipeline for Bioinformatic analysis of Metagenomic
 AmpliconS», BMC Bioinformatics, vol. 16, fasc. 1, Art. fasc. 1, dic. 2015, doi: 10.1186/s12859-
 015-0595-z.
+
+### Aknowledgements
+We would like to tank ITSoneWB mantainers [Bruno Fosso](https://github.com/bfosso) at University of Bari and 
+[Marco Tangaro](https://github.com/mtangaro) at IBIOM National Research Council for their support 
+in the ITSoneWB usage.
+
 ### Supplementary information
 
 #### About KEGG pathways individuation
@@ -117,6 +123,10 @@ sign.gen <- g.TF[g.TF$padj < 0.05,1:5]
 ```
 The same procedure was used for phyla and KEGG pathways
 
+#### About contaminant elimination
+Several dietary were found and eliminated before the rarefaction.
+We found contaminant phyla such as *Chordata, Streptophyta, Arthropoda,* etc.
+
 ### Supplementary figures
 
 ![](./suppfigs/jaccard_pcoa.png)
@@ -139,5 +149,11 @@ KEGG prevalent biosynthesis pathways.*
 KEGG prevalent degradation pathways.*
 
 ![](./suppfigs/BioMaS_KEGG_metabolism.png)
-*__Figure E__: Box-plot representing relative abundance sum of genera sustaining 
+*__Figure D__: Box-plot representing relative abundance sum of genera sustaining 
 KEGG prevalent metabolism pathways.*
+
+![](./suppfigs/shannon_inv_simpson_chao1_bp.png)
+*__Figure D__: Box plots representing Shannon, Inv. Simpson and Chao1 α-diversity indexes 
+for a group of samples for which gender metadata were available(12 Female vs 31 Male). 
+Wilcoxon tests were performed and resulting p-values are reported at the top of the box plots.
+.*
