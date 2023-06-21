@@ -21,7 +21,7 @@ KEGG [3] pathways potentially associated with investigated microbiota was perfor
 Five NCBI BioProjects were selected by combining an in-house developed Python script and a
 manual research on the NBCI BioProject website. The inclusion criteria were the presence of
 healthy control in the study and the use of ITS1 sequence as investigated barcode. Then,
-metabarcoding analysis was conducted on [ITSoneWB](https://itsonewb.cloud.ba.infn.it/galaxy) [4] a Galaxy workbench environment
+metabarcoding analysis was conducted on [ITSoneWB](https://itsonewb.cloud.ba.infn.it/galaxy) * [4] a Galaxy workbench environment
 based on the employment of ITSoneDB [5] as reference database for ITS1 sequences. The
 workflow selected for the analysis was BioMaS [6]. In brief, BioMaS is an OTU (Operational
 Taxonomic Unit) and ASV (Amplicon Sequence Variants) free method. After quality check and
@@ -157,3 +157,7 @@ KEGG prevalent metabolism pathways.*
 for a group of samples for which gender metadata were available(12 Female vs 31 Male). 
 Wilcoxon tests were performed and resulting p-values are reported at the top of the box plots.
 .*
+
+`*` The ITSoneWB web page is momentarily off. Then you can find the ITSoneWB docker 
+implementation at [this link](https://itsonewb.readthedocs.io/en/latest/itsonewb_docker.html)
+and the [BioMaS](https://itsonewb.readthedocs.io/en/latest/biomas/docker.html) docker implementation.
